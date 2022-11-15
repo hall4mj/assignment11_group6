@@ -1,7 +1,10 @@
 '''
-Created on Nov 14, 2022
-
-@author: Matthew Hall
+Name: John O'Connell, Matthew Hall
+email: oconnejh@ucmail.uc.edu, hall4mj@mail.uc.edu
+Assignment: Assignment 11
+Course: IS 4010
+Semester/Year: Fall 2022
+Brief Description: Making an API call with a URL
 '''
 # main.py
 import json # Built-in, no pip install required
@@ -21,4 +24,8 @@ print(status)
 
 
 for farm in parsed_json['data']: # Get the value associated with parsed_json['data']   
-    print (farm)
+   print (farm)
+   
+for farm in parsed_json['data']:
+    print(farm["name"])
+   
